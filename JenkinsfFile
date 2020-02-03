@@ -27,19 +27,12 @@ agent any
         }
         post {
         always {
-        junit 'something/**/*.xml'
+        junit 'test/*.xml'
         }
         }
 
         }
 
-         stage ('Deployment Stage') {
-                steps {
-                withMaven(maven : 'maven_3_5_0') {
-                            sh 'mvn deploy'
-                            }
 
-                }
-                }
     }
 }
