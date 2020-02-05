@@ -6,6 +6,7 @@ public class PalidromeTest extends TestCase {
 
         Palidrome pl = new Palidrome();
         pl.setText("mom");
+        System.out.println("inside test1");
         assertEquals(true,pl.checkPalidrome());
 
 
