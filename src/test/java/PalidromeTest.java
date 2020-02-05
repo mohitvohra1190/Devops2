@@ -29,4 +29,13 @@ public class PalidromeTest extends TestCase {
 
 
     }
+
+    public void testCheckPalidrome3() {
+
+        Palidrome pl = new Palidrome();
+        pl.setText("vohra");
+        assertEquals(true,pl.checkPalidrome());
+
+
+    }
 }
