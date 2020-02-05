@@ -16,7 +16,7 @@ node
         def mvnHome = tool name: 'maven_3_6_3', type: 'maven'
 
         echo "${mvnHome}"
-                bat = "${mvnHome}/bin/mvn compile"
+                bat = "${mvnHome}/bin/mvn clean compile"
                 echo 'after compiling'
 
      }
