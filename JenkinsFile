@@ -21,6 +21,18 @@ node
 
      }
 
+        stage('build')
+         {
+              echo 'before compiling'
+
+             def mvnHome = tool name: 'maven_3_6_3', type: 'maven'
+
+             echo "${mvnHome}"
+                     bat = "${mvnHome}/bin/mvn package"
+                     echo 'after compiling'
+
+          }
+
      stage ('testing')
      {
          def mvnHome = tool name: 'maven_3_6_3', type: 'maven'
