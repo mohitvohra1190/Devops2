@@ -37,7 +37,6 @@ node
      {
          def mvnHome = tool name: 'maven_3_6_3', type: 'maven'
          bat = "${mvnHome}/bin/mvn test"
-
          always{
         junit 'Test/*.xml'
 
