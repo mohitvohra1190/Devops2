@@ -37,7 +37,7 @@ node
      {
          def mvnHome = tool name: 'maven_3_6_3', type: 'maven'
          echo 'before testing'
-         set path = "C:\Program Files (x86)\apache-maven-3.6.3\bin\"
+         set path = C:\Program Files (x86)\apache-maven-3.6.3\bin\
         mvn test
          echo 'after testing'
          always{
