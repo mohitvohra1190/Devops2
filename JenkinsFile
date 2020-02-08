@@ -32,6 +32,11 @@ node
                 bat = "${mvnHome}/bin/mvn  test"
         
      }
+     post {
+        always {
+            junit 'build/reports/**/*.xml'
+        }
+    }
 
 
 
